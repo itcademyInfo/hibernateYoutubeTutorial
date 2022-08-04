@@ -1,0 +1,20 @@
+
+=== One To Many Uni===
+
+CREATE TABLE `databasetutorial`.`gamer` (
+  `gid` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `age` INT NOT NULL,
+  PRIMARY KEY (`gid`));
+
+CREATE TABLE `databasetutorial`.`emailaddress` (
+  `emailAddressId` INT NOT NULL AUTO_INCREMENT,
+  `address` VARCHAR(100) NOT NULL,
+  `fK_gamer_id` INT NULL,
+  PRIMARY KEY (`emailAddressId`));
+
+
+alter table emailaddress
+add foreign key (fK_gamer_id) references gamer(gid);
+  
+  

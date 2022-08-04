@@ -11,5 +11,11 @@
 		<property name="show_sql">true</property>
 		
 		<mapping class="com.itcademy.hibernateCon.entity.User"/>
+		<mapping class="com.itcademy.hibernateCon.entity.Passport"/>
+		<mapping class="com.itcademy.hibernateCon.entity.Teacher"/>
+		<mapping class="com.itcademy.hibernateCon.entity.TeacherAddresse"/>	
+		<mapping class="com.itcademy.hibernateCon.entity.Gamer"/>		
+		<mapping class="com.itcademy.hibernateCon.entity.emailAddress"/>		
+			
 	</session-factory>
 </hibernate-configuration>
